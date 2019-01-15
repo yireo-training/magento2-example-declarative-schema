@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="yireo_example" resource="default" engine="innodb" comment="Yireo Example Table">
+        <column xsi:type="int" name="id" padding="6" unsigned="false" nullable="false" identity="true" comment="Example ID"/>
+        <column xsi:type="varchar" name="label" nullable="false" length="255" comment="Some Label"/>
+        <column xsi:type="varchar" name="value" nullable="false" length="255" comment="Some Value"/>
+        <column xsi:type="smallint" name="enabled" unsigned="true" nullable="true" identity="false" default="1" comment="Enabled"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+    </table>
+</schema>
