@@ -4,7 +4,7 @@
         <column xsi:type="int" name="id" padding="6" unsigned="false" nullable="false" identity="true" comment="Example ID"/>
         <column xsi:type="varchar" name="label" nullable="false" length="255" comment="Some Label"/>
         <column xsi:type="varchar" name="value" nullable="false" length="255" comment="Some Value"/>
-        <column xsi:type="smallint" name="enabled" unsigned="true" nullable="true" identity="false" default="1" comment="Enabled" />
+        <column xsi:type="smallint" name="enabled" unsigned="true" nullable="true" identity="false" default="1" comment="Enabled" disabled="true"/>
         <constraint xsi:type="primary" referenceId="PRIMARY">
             <column name="id"/>
         </constraint>
