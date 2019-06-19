@@ -51,3 +51,4 @@ class Sample implements SchemaPatchInterface
         ];
     }
 }
+
